@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ThreeDotLoading">
+        <attr name="type" format="string" />
+        <attr name="maxValue" format="float" />
+        <attr name="minValue" format="float" />
+        <attr name="dotCount" format="integer" />
+        <attr name="duration" format="integer" />
+        <attr name="dotColor" format="color" />
+    </declare-styleable>
+
+
+
+</resources>
