@@ -53,7 +53,7 @@ public class ThreeDotLoading extends View {
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ThreeDotLoading);
 
         type = typedArray.getString(R.styleable.ThreeDotLoading_type);
-        if (!type.equals("jump") && !type.equals("zoom"))
+        if (type == null || (!type.equals("jump") && !type.equals("zoom")))
             type = "zoom";
         dotCount = typedArray.getInt(R.styleable.ThreeDotLoading_dotCount, dotCount);
         dotColor = typedArray.getInt(R.styleable.ThreeDotLoading_dotColor, Color.WHITE);
